@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebChat</title>
+    <!-- Inclua os arquivos do Bootstrap (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adicione seu próprio CSS personalizado, se necessário -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eff3f6;
+        }
+
+        #chat-container {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #4e74a2;
+            color: #ffffff;
+            border-radius: 15px 15px 0 0;
+            padding: 15px;
+        }
+
+        .card-footer {
+            border-radius: 0 0 15px 15px;
+            padding: 15px;
+            background-color: #ffffff;
+        }
+
+        .input-group {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .form-control {
+            border: none;
+            border-radius: 0;
+        }
+
+        .btn-primary {
+            border: none;
+            border-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">WebChat</h3>
+                    </div>
+                    <div class="card-body" id="chat-container">
+                        <!-- Área para exibir mensagens do chat -->
+                        <div class="mb-3">
+                            <strong>Usuário 1:</strong> Olá!
+                        </div>
+                        <div class="mb-3">
+                            <strong>Usuário 2:</strong> Oi!
+                        </div>
+                        <!-- Adicione mais mensagens conforme necessário -->
+                    </div>
+                    <div class="card-footer">
+                        <!-- Formulário para enviar mensagens -->
+                        <form id="chat-form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Digite sua mensagem..." required>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclua os arquivos do Bootstrap (JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Adicione seu próprio JavaScript personalizado, se necessário -->
+    <script src="caminho/para/seu-script.js"></script>
+</body>
+
+</html>
